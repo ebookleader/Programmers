@@ -9,3 +9,7 @@ def solution(nums):
     return answer
 
 print(solution([3,1,2,3]))
+
+# 간단하게 수정한 방법
+def solution(nums):
+    return min(len(nums)//2, len(set(nums)))

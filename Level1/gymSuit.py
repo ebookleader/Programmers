@@ -16,5 +16,3 @@ def solution(n, lost, reserve):
             reserve.remove((lost[i]-1))
             answer += 1
     return answer
-
-print(solution(5, [2,3,4], [1,2,3]))

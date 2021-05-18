@@ -20,6 +20,11 @@ def solution(answers):
         answer.append(2)
     if cnt3 == maxi:
         answer.append(3)
+
+    result = [cnt1, cnt2, cnt3]
+    for idx, cnt in enumerate(result):
+        if cnt == max(result):
+            answer.append(i+1)
     return answer
 
 print(solution([1,3,2,4,2]))
