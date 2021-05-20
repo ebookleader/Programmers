@@ -11,10 +11,8 @@ def solution(N, stages):
             dic[i] = (fail/total)
         stages = stages[fail:]
     sortedDic = sorted(dic.items(), key = lambda  x: x[1], reverse=True)
-    print(sortedDic)
     for s in sortedDic:
         answer.append(s[0])
-
     return answer
 
 print(solution(7, [2, 1, 2, 6, 2, 4, 3, 3]))
