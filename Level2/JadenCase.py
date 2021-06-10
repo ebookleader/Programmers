@@ -1,7 +1,6 @@
 def solution(s):
     res = []
     s = s.split(' ')
-    print(s)
     for word in s:
         if word == '':
             res.append(word)
